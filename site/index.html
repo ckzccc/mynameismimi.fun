@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+  <body class="p-4">
+    <div class="text-center text-8xl special-font">Mimi</div>
+<div class="text-3xl flex gap-4 p-2">
+  <a href="https://www.instagram.com/mimiinmel/">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <i class="fa-solid fa-paw"></i>
+  <i id="cat" class="fa-solid fa-cat"></i>
+</div>
+
+    <div class="flex justify-center gap-4">
+      <div><a class="text-black" href="/">about</a></div>
+      <div><a class="text-black" href="journal.html">journal</a></div>
+      <div><a class="text-black" href="contact.html">contact</a></div>
+    </div>
+    <div
+      class="hero bg-cover bg-center text-8xl w-2/3 text-black special-font p-16 mt-7 ml-auto mr-auto"
+    >
+      Meow
+    </div>
+    <div class="m-20 text-4xl special-font text-center">
+      <div>
+        I was adopted by my mum on 01/07/2018 and became my mum's first child.
+      </div>
+      <div>our story</div>
+    </div>
+    <div class="m-20 flex justify-between special-font text-4xl">
+      <div class="flex flex-col justify-between">
+        <div>My little sister</div>
+        <div>
+          <div id="snowy-text">Snowy</div>
+        </div>
+      </div>
+      <div id="snowy-image" class="snowy w-1/3 bg-cover bg-center"></div>
+    </div>
+
+    <script>
+      function catsBirthday(whichCat) {
+        if (whichCat === "snowy") {
+          return "7th April 2021";
+        }
+
+        if (whichCat === "mimi") {
+          return "5th February 2015";
+        }
+
+        return "I don't know this cat!";
+      }
+
+      function qs(id) {
+        return document.querySelector(id);
+      }
+
+      function on(element, event, fn) {
+        element.addEventListener(event, fn);
+      }
+
+      function makeSnowyTextRed() {
+        qs("#snowy-image").style.visibility = "hidden";
+      }
+
+      on(qs("#snowy-button"), "click", makeSnowyTextRed);
+
+      // qs('#snowy-image')
+    </script>
+  </body>
+</html>

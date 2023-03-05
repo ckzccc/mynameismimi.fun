@@ -1,0 +1,50 @@
+.examples {
+    width: 10px;
+    height: 10px;
+    width: 30%;
+
+    padding: 10px;
+    padding-top: 40px;
+    margin: 10px;
+    padding-right: 30px;
+
+    border: 2px solid purple;
+    background-color: red;
+
+    font-family: 'Times New Roman';
+    text-decoration: underline;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.special-font {
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+body {
+    background-color: rgb(250, 239, 225);
+}
+
+.hero {
+    height: 470px;
+    background-image: url(mimi.jpg);
+}
+
+.snowy {
+    height: 470px;
+    background-image: url(snowy.jpg);
+}
+
+#page {
+    height: 400px;
+
+}

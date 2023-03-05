@@ -38,3 +38,13 @@ body {
     height: 470px;
     background-image: url(mimi.jpg);
 }
+
+.snowy {
+    height: 470px;
+    background-image: url(snowy.jpg);
+}
+
+#page {
+    height: 400px;
+
+}
